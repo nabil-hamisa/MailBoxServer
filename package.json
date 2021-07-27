@@ -4,6 +4,7 @@
   "description": "",
   "main": "./dist/main.js",
   "dependencies": {
+    "@types/mailparser": "^3.0.3",
     "emailjs-imap-client": "^3.1.0",
     "express": "^4.17.1",
     "mailparser": "^3.2.0",
