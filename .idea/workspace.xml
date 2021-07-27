@@ -16,12 +16,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62a71678-ce48-431c-91c5-5f311ea5b6cd" name="Default Changelist" comment="Adding smtp worker">
+    <list default="true" id="62a71678-ce48-431c-91c5-5f311ea5b6cd" name="Default Changelist" comment="Adding imap worker and worker methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IMAP.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/IMAP.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SMTP.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/SMTP.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contacts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/contacts.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
     </list>
     <list id="51c3fdb6-f07d-4a0f-8f2c-32aebceb6caa" name="Revert &quot;project init&quot;" comment="Revert &quot;project init&quot;&#10;&#10;This reverts commit f5a2c826" />
@@ -108,7 +106,7 @@
       <workItem from="1626875800356" duration="1611000" />
       <workItem from="1626946209901" duration="866000" />
       <workItem from="1627044058457" duration="14393000" />
-      <workItem from="1627367953195" duration="12069000" />
+      <workItem from="1627367953195" duration="14984000" />
     </task>
     <task id="LOCAL-00001" summary="Project init">
       <created>1626790854722</created>
@@ -145,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627378282297</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adding imap worker and worker methods">
+      <created>1627391840667</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627391840667</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +186,8 @@
     <MESSAGE value="Initialize dev enviroment" />
     <MESSAGE value="Adding routes" />
     <MESSAGE value="Adding smtp worker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding smtp worker" />
+    <MESSAGE value="Adding imap worker and worker methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding imap worker and worker methods" />
   </component>
   <component name="WindowStateProjectService">
     <state x="722" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626793105531">
@@ -200,22 +206,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1626790377119" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1627391330440">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1627394472197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1627391330440" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1627391330440">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1627394472197" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1627394472197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1627391330440" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1627391330440">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1627394472197" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1627394472197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1627391330440" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1627391330440">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1627394472197" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1627394472197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1627391330440" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1627394472197" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1627058582759">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

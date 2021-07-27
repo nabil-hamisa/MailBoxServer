@@ -103,6 +103,8 @@ app.post("/messages", async (inRequest: Request, inRepsonse: Response) => {
 app.get("/contacts", async (inRequest: Request, inResponse: Response) => {
     try {
         const contactsWorker: Contacts.Worker = new Contacts.Worker()
+        // @ts-ignore
+
         const contacts: IContact = contactsWorker.listContacts();
         inResponse.status(200)
         inResponse.json(contacts);
@@ -115,6 +117,7 @@ app.get("/contacts", async (inRequest: Request, inResponse: Response) => {
 app.post("/contacts", async (inRequest: Request, inResponse: Response) => {
     try {
         const contactsWorker: Contacts.Worker = new Contacts.Worker()
+        // @ts-ignore
         const contact: IContact = contactsWorker.addContact(inRequest.body)
         inResponse.status(200)
         inResponse.json(contact)
@@ -127,7 +130,7 @@ app.post("/contacts", async (inRequest: Request, inResponse: Response) => {
 app.delete("/contatcts/:id", async (inRequest: Request, inResponse: Response) => {
     try {
         const contactsWorker: Contacts.Worker = new Contacts.Worker()
-        await contactsWorker.deleteContact(inRequest.params);
+        await contactsWorker.deleteContact(inRequest.params.id);
         inResponse.status(200)
         inResponse.send ("ok");
     } catch (e) {

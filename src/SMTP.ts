@@ -19,7 +19,7 @@ export class Worker {
                     if (inError) {
                         inReject(inError);
                     } else {
-                        inResolve();
+                        inResolve("Sent");
                     }
                 }
             );
