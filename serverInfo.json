@@ -1,3 +1,18 @@
 {
-
+  "smtp": {
+    "host": "smtp.gmail.com",
+    "port": 587,
+    "auth": {
+      "user": "nabil.hamissa@gmail.com",
+      "pass": "m60e4commando "
+    }
+  },
+  "imap": {
+    "host": "imap.gmail.com",
+    "port": 993,
+    "auth": {
+      "user": "nabil.hamissa@gmail.com",
+      "pass": "m60e4commando"
+    }
+  }
 }
