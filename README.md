@@ -21,6 +21,6 @@ To RuN
       }
     }
   }
-  <li>Run npm run start</li>
+  <li>Run npm run compile</li>
   
 </ol>
