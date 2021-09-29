@@ -3,6 +3,7 @@ To RuN
   <li>Create serverInfo.json file  in root directory </li> 
   <li>add your config  </li>
   <p>
+```    
   {
     "smtp": {
       "host": "mail.mydomain.com",
@@ -21,6 +22,7 @@ To RuN
       }
     }
   }
+    ```   
   <li>Run npm run compile</li>
   
 </ol>
